@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <link rel="stylesheet" href="/build/vitest.css">
+        <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/vitest.esm.js"></script>
+    <script nomodule src="/build/vitest.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="title"> <h1> <my-component style="color:red;" first="| "></my-component></h1><h1></my-component><my-component last="CtA - Main conversion"></my-component></h1>
+    </div>
+    <div class="container">
+      <div> 
+        <h2>
+       <my-component class="container" first="A Wonderful Serenity has taken possession " last="of my entire soul"></my-component>
+      </h2>
+      </div>
+      <div>
+       <h4><my-component class="container" first="A Wonderful Serenity has taken possession " last="of my entire soul"></my-component></h4>
+      </div>
+      <div>
+        <h5><vi-component-1 id="contact" text="Link Button"></vi-component-1></h5>
+      </div>
+      <div>
+      <img class="container img" src="https://dgrm-aws-bucket.s3.sa-east-1.amazonaws.com/imgs/cta-open.jpg"/>
+    </div>
+    </div>
+
+    <div>
+      <h3><vi-collapse title="Contact Us">
+        <ul>
+          <li>ouremail@email.com</li>
+          <li>@ourinstagram</li>
+          <li>@wegotfacebook</li>
+          <li>@whatevernetworkyouwish</li>
+        </ul>
+      </vi-collapse></h3>
+    </div>
+  </body>
+
+
+<script>
+  var btn = document.querySelector('#contact')
+
+  btn.addEventListener('click', function() {
+    alert('this was supposed to open Contacts tab')
+        
+  })
+</script>
+
+
+</html>
